@@ -1,5 +1,8 @@
+# Jekyll Files
 _site/
 .sass-cache/
 .jekyll-metadata
 
+# Vagrant Files
+.vagrant
 Vagrantfile
