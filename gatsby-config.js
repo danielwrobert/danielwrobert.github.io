@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+	/* Your site config here */
+	siteMetadata: {
+		title: `danielwrobert.github.io`,
+		description: `A home for static archives and presentation slides.`,
+	},
+	plugins: [],
+};
