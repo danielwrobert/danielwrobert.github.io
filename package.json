@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-	"develop": "gatsby develop",
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
+    "develop": "gatsby develop",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -16,6 +16,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "gatsby": "^2.20.25",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
