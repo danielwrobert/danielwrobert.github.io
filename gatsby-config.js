@@ -7,7 +7,7 @@
 module.exports = {
 	/* Your site config here */
 	siteMetadata: {
-		title: `danielwrobert.github.io`,
+		title: `Static Archives`,
 		description: `A home for static archives and presentation slides.`,
 	},
 	plugins: [`gatsby-plugin-emotion`],
