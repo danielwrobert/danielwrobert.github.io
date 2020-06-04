@@ -10,5 +10,5 @@ module.exports = {
 		title: `danielwrobert.github.io`,
 		description: `A home for static archives and presentation slides.`,
 	},
-	plugins: [],
+	plugins: [`gatsby-plugin-emotion`],
 };
