@@ -8,8 +8,9 @@ import '../styles/normalize.css';
 import '../styles/global.css';
 
 const Content = styled.div`
-	margin: 0 auto;
-	max-width: 760px;
+	margin: 30px auto;
+	max-width: 800px;
+	width: 100%;
 `;
 
 export default ({ children }) => (

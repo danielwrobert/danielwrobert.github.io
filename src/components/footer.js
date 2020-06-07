@@ -4,8 +4,13 @@ import styled from '@emotion/styled';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Container = styled.footer`
+	border-top: 1px solid #e8e8e8;
 	margin-top: auto;
-	text-align: center;
+`;
+
+const Copyright = styled.p`
+	margin: 22px auto;
+	max-width: 800px;
 `;
 
 const Footer = () => {
@@ -14,10 +19,9 @@ const Footer = () => {
 
 	return (
 		<Container>
-			<hr />
-			<p>
+			<Copyright>
 				Copyright {date} - {title}
-			</p>
+			</Copyright>
 		</Container>
 	);
 };

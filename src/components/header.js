@@ -5,17 +5,21 @@ import styled from '@emotion/styled';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Container = styled.header`
+	border-bottom: 1px solid #e8e8e8;
+	width: 100%;
+`;
+
+const Content = styled.div`
 	align-items: center;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
+	flex-direction: row;
 	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 800px;
 `;
 
 const H1 = styled.h1`
-	flex: 1 1 auto;
-`;
-
-const Description = styled.p`
 	flex: 1 1 auto;
 `;
 
@@ -31,7 +35,7 @@ const Nav = styled.nav`
 		padding: 0;
 
 		li {
-			margin: 0 5px;
+			margin: 0 10px;
 		}
 	}
 `;
@@ -41,36 +45,30 @@ const Header = () => {
 
 	return (
 		<Container>
-			<H1>
-				<Link to={`/`}>{title}</Link>
-			</H1>
-			<Description>
-				<em>{description}</em>
-			</Description>
-			<Nav>
-				<ul>
-					<li>
-						<Link to={'/'} activeClassName="active">
-							Home
-						</Link>
-					</li>
-					<li>
-						<Link to={'/about'} activeClassName="active">
-							About
-						</Link>
-					</li>
-					<li>
-						<Link to={'/archives'} activeClassName="active">
-							Archives
-						</Link>
-					</li>
-					<li>
-						<Link to={'/slides'} activeClassName="active">
-							Slides
-						</Link>
-					</li>
-				</ul>
-			</Nav>
+			<Content>
+				<H1>
+					<Link to={`/`}>{title}</Link>
+				</H1>
+				<Nav>
+					<ul>
+						<li>
+							<Link to={'/about'} activeClassName="active">
+								About
+							</Link>
+						</li>
+						<li>
+							<Link to={'/archives'} activeClassName="active">
+								Archives
+							</Link>
+						</li>
+						<li>
+							<Link to={'/slides'} activeClassName="active">
+								Slides
+							</Link>
+						</li>
+					</ul>
+				</Nav>
+			</Content>
 		</Container>
 	);
 };
