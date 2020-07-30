@@ -59,8 +59,8 @@ const Header = () => {
 					<Nav>
 						<ul>
 							<li>
-								<Link to={'/about'} activeClassName="active">
-									About
+								<Link to={'/'} activeClassName="active">
+									Hello
 								</Link>
 							</li>
 							<li>
@@ -77,7 +77,9 @@ const Header = () => {
 					</Nav>
 				</HeaderContent>
 			</HeaderContainer>
-			<Description>{description}</Description>
+			<Description>
+				<em>{description}</em>
+			</Description>
 		</>
 	);
 };

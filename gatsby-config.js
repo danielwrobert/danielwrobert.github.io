@@ -7,8 +7,8 @@
 module.exports = {
 	/* Your site config here */
 	siteMetadata: {
-		title: `Static Archives`,
-		description: `A home for static archives and presentation slides.`,
+		title: `GitHub Hub`,
+		description: `A place for static archives, presentation slides, and things of the like.`,
 	},
 	plugins: [`gatsby-plugin-emotion`],
 };
