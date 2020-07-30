@@ -1,0 +1,12 @@
+/* Project Global Styles
+	 ========================================================================== */
+
+body {
+	color: #020202;
+}
+
+#gatsby-focus-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
